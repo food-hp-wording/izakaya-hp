@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "SEATON",
+    "slug": "seaton-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "seaton",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FAFAFA"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.seaton.app",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "SEATONは近くのゆずりサポーターを検出するためBluetoothを使用します。位置情報は収集しません。"
+      }
+    },
+    "android": {
+      "package": "com.seaton.app"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
