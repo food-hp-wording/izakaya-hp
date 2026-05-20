@@ -8,48 +8,20 @@
     "scheme": "seaton",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
       "backgroundColor": "#FAFAFA"
     },
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.seaton.app",
-      "deploymentTarget": "13.4",
       "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "SEATONは近くのゆずりサポーターを検出するためBluetoothを使用します。位置情報は収集しません。",
-        "UIBackgroundModes": ["bluetooth-central", "bluetooth-peripheral"]
+        "NSBluetoothAlwaysUsageDescription": "SEATONは近くのゆずりサポーターを検出するためBluetoothを使用します。位置情報は収集しません。"
       }
     },
     "android": {
-      "package": "com.seaton.app",
-      "permissions": [
-        "BLUETOOTH",
-        "BLUETOOTH_ADMIN",
-        "BLUETOOTH_SCAN",
-        "BLUETOOTH_ADVERTISE",
-        "BLUETOOTH_CONNECT",
-        "ACCESS_FINE_LOCATION"
-      ]
+      "package": "com.seaton.app"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "deploymentTarget": "13.4"
-          }
-        }
-      ],
-      [
-        "react-native-ble-plx",
-        {
-          "isBackgroundEnabled": false,
-          "modes": ["central", "peripheral"],
-          "bluetoothAlwaysPermission": "SEATONは近くのゆずりサポーターを検出するためBluetoothを使用します"
-        }
-      ]
+      "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
